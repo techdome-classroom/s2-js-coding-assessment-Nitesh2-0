@@ -18,7 +18,9 @@ var isValid = function(s) {
         }
       }
     }
-    if(array.length ==)
+    if(array.length == temp){
+      return true;
+    }
 };
 
 module.exports = { isValid };

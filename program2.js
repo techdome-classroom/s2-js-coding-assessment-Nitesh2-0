@@ -13,14 +13,19 @@ var romanToInt = function (s) {
     'D': 500,
     'M': 1000
   };
-  for (let i = 0; i < s.length - 1; i++) {
-    if (roman[s[i]] < roman[s[i + 1]]) {
-      res -= roman[s[i]];
+  for (let i = 0; i < s.length; i++) {
+    const currentValue = roman[s[i]];
+    const nextValue = roman[s[i + 1]] || 0; // Default to 0 if next character doesn't exist
+
+    // If current value is less than the next value, subtract it; otherwise, add it
+    if (currentValue < nextValue) {
+      res -= currentValue;
     } else {
-      res += roman[s[i]];
+      res += currentValue;
     }
   }
-  return res + roman[s[s.length - 1]]
+
+  return res; // Return the total value
 };
 
 

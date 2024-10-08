@@ -12,7 +12,9 @@ var isValid = function(s) {
     let temp = 0; 
     for(let i=0; i<s.length; i++){
       for(let j=i; j<array.length; j++){
-        if(map.get(array[i] === array[j]))
+        if(map.get(array[i] === array[j])){
+          array[i]
+        }
       }
     }
 };

@@ -5,7 +5,9 @@
 var isValid = function(s) {
     let array = s.split("");
     const mapVal = new map(); 
-    map.set('{','}')
+    map.set('{','}');
+    map.set('(',')'); 
+    map.set()
 };
 
 module.exports = { isValid };

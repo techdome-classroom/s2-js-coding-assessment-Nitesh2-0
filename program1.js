@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let array = 
+    let array = s.split("")
 };
 
 module.exports = { isValid };

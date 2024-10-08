@@ -12,7 +12,9 @@ var isValid = function (s) {
   const stack = [];
   for (let i = 0; i < s.length; j++) {
     for (let j = 0; j < barackets.length; j++) {
-      
+      if(s[i] === barackets[j][0]){
+        stack.push(s[i]);
+      }
     }
   }
   let array = s.split("");

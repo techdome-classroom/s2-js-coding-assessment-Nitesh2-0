@@ -4,7 +4,7 @@
  */
 var isValid = function (s) {
   let array = s.split("");
-  const mapVal = new map();
+  const mapVal = new Map();
   mapVal.set('{', '}');
   mapVal.set('(', ')');
   mapVal.set('[', ']');
@@ -14,7 +14,7 @@ var isValid = function (s) {
     for (let j = i; j < array.length; j++) {
       if (mapVal.get(array[i] === array[j])) {
         array[i], array[j] = 0;
-        t += 2
+        temp += 2
       }
     }
   }

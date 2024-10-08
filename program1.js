@@ -4,14 +4,16 @@
  */
 var isValid = function (s) {
   const barackets = [
-    ["(",")"],
-    ["{","}"],
-    ["[","]"],
+    ["(", ")"],
+    ["{", "}"],
+    ["[", "]"],
   ]
 
-  const  stack = [] ; 
-  for(let i=0; i<s.length; j++){
-    for(let j=0; )
+  const stack = [];
+  for (let i = 0; i < s.length; j++) {
+    for (let j = 0; j < barackets.length; j++) {
+      
+    }
   }
   let array = s.split("");
   const mapVal = new Map();

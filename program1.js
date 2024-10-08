@@ -14,7 +14,7 @@ var isValid = function (s) {
     for (let j = i; j < array.length; j++) {
       if (mapVal.get(array[i] === array[j])) {
         array[i], array[j] = 0;
-        t += 2
+        temp += 2
       }
     }
   }

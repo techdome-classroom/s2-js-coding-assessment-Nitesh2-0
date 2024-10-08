@@ -24,7 +24,7 @@ var romanToInt = function (s) {
     }
   }
 
-  return res; // Return the total value
+  return res; 
 };
 
 

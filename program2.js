@@ -20,7 +20,7 @@ var romanToInt = function (s) {
       res += roman[s[i]];
     }
   }
-  return res + roman
+  return res + roman[s[s.length - 1]]
 };
 
 

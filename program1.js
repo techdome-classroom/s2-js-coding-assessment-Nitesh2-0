@@ -4,7 +4,7 @@
  */
 var isValid = function (s) {
   let array = s.split("");
-  const mapVal = new map();
+  const mapVal = new Map();
   mapVal.set('{', '}');
   mapVal.set('(', ')');
   mapVal.set('[', ']');

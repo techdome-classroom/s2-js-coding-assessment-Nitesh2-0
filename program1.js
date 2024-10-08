@@ -15,7 +15,7 @@ var isValid = function (s) {
       if(s[i] === barackets[j][0]){
         stack.push(s[i]);
       }else if(s[i] === barackets[j][1]){
-        
+        if(stack.length === 0 || stack.pop() !== barackets[j][0])
       }
     }
   }

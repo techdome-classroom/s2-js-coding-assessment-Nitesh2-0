@@ -13,6 +13,7 @@ var romanToInt = function (s) {
     'D': 500,
     'M': 1000
   };
+  
   for (let i = 0; i < s.length; i++) {
     const currentValue = roman[s[i]];
     const nextValue = roman[s[i + 1]] || 0; 

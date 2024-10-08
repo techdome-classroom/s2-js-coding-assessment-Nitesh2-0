@@ -12,8 +12,10 @@ var romanToInt = function (s) {
     'C': 100,
     'D': 500,
     'M': 1000
-  }; 
-  for(let i=0; i<)
+  };
+  for (let i = 0; i < s.length - 1; i++) {
+    if (roman[s[i]] < roman[s[i + 1]])
+  }
 };
 
 

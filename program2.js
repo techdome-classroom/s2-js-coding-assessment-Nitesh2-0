@@ -3,7 +3,7 @@
  * @return {number}
  */
 var romanToInt = function(s) {
-    
+    let res = 0;
 };
 
 

@@ -4,7 +4,8 @@
  */
 var isValid = function(s) {
     let array = s.split("");
-    const map
+    const mapVal = new map(); 
+    map.set('')
 };
 
 module.exports = { isValid };

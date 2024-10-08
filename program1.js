@@ -21,6 +21,7 @@ var isValid = function(s) {
     if(array.length == temp){
       return true;
     }
+    return false;
 };
 
 module.exports = { isValid };

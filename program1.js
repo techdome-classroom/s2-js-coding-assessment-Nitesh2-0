@@ -18,6 +18,7 @@ var isValid = function(s) {
         }
       }
     }
+    if(array.length ==)
 };
 
 module.exports = { isValid };

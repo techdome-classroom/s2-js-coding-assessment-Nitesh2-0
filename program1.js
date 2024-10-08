@@ -13,7 +13,8 @@ var isValid = function(s) {
     for(let i=0; i<s.length; i++){
       for(let j=i; j<array.length; j++){
         if(map.get(array[i] === array[j])){
-          array[i]
+          array[i],array[j]=0;
+          t += 2
         }
       }
     }

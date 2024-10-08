@@ -3,25 +3,25 @@
  * @return {boolean}
  */
 var isValid = function (s) {
-  const barackets = [
-    ["(", ")"],
-    ["{", "}"],
-    ["[", "]"],
-  ]
+  let array = s.split("");
+  const mapVal = new map();
+  mapVal.set('{', '}');
+  mapVal.set('(', ')');
+  mapVal.set('[', ']');
 
-  const stack = [];
-  for (let i = 0; i < s.length; j++) {
-    for (let j = 0; j < barackets.length; j++) {
-      if (s[i] === barackets[j][0]) {
-        stack.push(s[i]);
-      } else if (s[i] === barackets[j][1]) {
-        if (stack.length === 0 || stack.pop() !== barackets[j][0]) {
-          return false
-        }
+  let temp = 0;
+  for (let i = 0; i < s.length; i++) {
+    for (let j = i; j < array.length; j++) {
+      if (mapVal.get(array[i] === array[j])) {
+        array[i], array[j] = 0;
+        t += 2
       }
     }
   }
-  return stack.length === 0;
+  if (array.length == temp) {
+    return true;
+  }
+  return false;
 };
 
 module.exports = { isValid };

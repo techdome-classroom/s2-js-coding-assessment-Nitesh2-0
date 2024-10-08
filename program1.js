@@ -3,6 +3,7 @@
  * @return {boolean}
  */
 var isValid = function (s) {
+  let sta
   let array = s.split("");
   const mapVal = new Map();
   mapVal.set('{', '}');

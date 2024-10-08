@@ -9,7 +9,10 @@ var isValid = function (s) {
     '}':'{',
     ']':'['
   };
-  for()
+  for(let i=0; i<s.length; i++){
+    let char = s[i];
+    if(char === '(' || )
+  }
 };
 
 module.exports = { isValid };

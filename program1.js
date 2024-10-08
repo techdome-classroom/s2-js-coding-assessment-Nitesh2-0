@@ -4,7 +4,7 @@
  */
 var isValid = function(s) {
     let array = s.split("");
-    const 
+    const keyPair = 
 };
 
 module.exports = { isValid };

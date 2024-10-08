@@ -15,6 +15,8 @@ var isValid = function (s) {
       stack.push(char);
     }else if(stack.length > 0 && stack[stack.length-1] === map[char]){
       stack.pop(); 
+    }else{
+      return false;
     }
   }
 };

@@ -5,9 +5,9 @@
 var isValid = function (s) {
   let array = s.split("");
   const mapVal = new map();
-  map.set('{', '}');
-  map.set('(', ')');
-  map.set('[', ']');
+  mapVal.set('{', '}');
+  mapVal.set('(', ')');
+  mapVal.set('[', ']');
 
   let temp = 0;
   for (let i = 0; i < s.length; i++) {

@@ -15,7 +15,7 @@ var romanToInt = function (s) {
   };
   for (let i = 0; i < s.length - 1; i++) {
     if (roman[s[i]] < roman[s[i + 1]]){
-      res -= 
+      res -= roman[s[i]]
     }
   }
 };

@@ -7,7 +7,9 @@ var isValid = function(s) {
     const mapVal = new map(); 
     map.set('{','}');
     map.set('(',')'); 
-    map.set()
+    map.set('[',']'); 
+    
+    let 
 };
 
 module.exports = { isValid };

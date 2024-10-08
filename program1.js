@@ -8,6 +8,11 @@ var isValid = function (s) {
     ["{","}"],
     ["[","]"],
   ]
+
+  const  stack = [] ; 
+  for(let i=0; i<s.length; j++){
+    for(let j=0; )
+  }
   let array = s.split("");
   const mapVal = new Map();
   mapVal.set('{', '}');

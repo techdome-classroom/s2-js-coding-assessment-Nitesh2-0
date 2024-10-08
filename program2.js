@@ -15,9 +15,8 @@ var romanToInt = function (s) {
   };
   for (let i = 0; i < s.length; i++) {
     const currentValue = roman[s[i]];
-    const nextValue = roman[s[i + 1]] || 0; // Default to 0 if next character doesn't exist
+    const nextValue = roman[s[i + 1]] || 0; 
 
-    // If current value is less than the next value, subtract it; otherwise, add it
     if (currentValue < nextValue) {
       res -= currentValue;
     } else {
